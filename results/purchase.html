@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<style type="text/css">
+body {
+	background-image: url(../images/0402.jpg);
+	background-repeat: repeat;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<table width="800" border="1" align="center" cellpadding="0" cellspacing="0"><form id="form1" name="form1" method="post" action="">
+  <tr>
+    <td width="400" height="100" align="center" valign="middle" bgcolor="#FFFF99">真皮皮包</td>
+    <td width="400" height="100" align="center" valign="middle" bgcolor="#FFFF99">真皮短夾</td>
+  </tr>
+  <tr>
+    <td width="400" height="150" align="center" valign="middle" bgcolor="#FFFF99"><img src="../images/0403.jpg" width="250" height="150" /></td>
+    <td width="400" height="150" align="center" valign="middle" bgcolor="#FFFF99"><img src="../images/0404.jpg" width="216" height="150" /></td>
+  </tr>
+  <tr>
+    <td width="400" height="100" align="center" valign="middle" bgcolor="#FFFF99">
+      <p>
+        <label>
+          <input type="radio" name="R1"  id="R1_0" value="購買" checked="checked" />
+          購買</label>
+        <label>
+          <input type="radio" name="R1" value="不購買" id="R1_1" />
+          不購買</label>
+        <label>
+          <input type="radio" name="R1" value="考慮中" id="R1_2" />
+          考慮中</label>
+        <br />
+      </p>
+</td>
+    <td width="400" height="100" align="center" valign="middle" bgcolor="#FFFF99"><label>
+      <input type="radio" name="R2" value="購買" id="R1_3" />
+      購買</label>
+      <label>
+        <input type="radio" name="R2" value="不購買" id="R1_4" />
+        不購買</label>
+      <label>
+        <input name="R2" type="radio" id="R1_5" value="考慮中" checked="checked" />
+      考慮中</label></td>
+  </tr>    
+</table>
+<p>
+  <input name="button" type="reset" id="button" value="送出" onclick="msg()" />
+  <input type="reset" name="button2" id="button2" value="重置" />
+</p>
+
+<script>
+function msg(){
+	confirm ("流行皮件選購確認:\n\n●真皮皮包："+form1.R1.value+"\n●真皮短夾："+form1.R2.value);
+	
+	}
+
+
+</script>
+</form>
+</body>
+</html>
